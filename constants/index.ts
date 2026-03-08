@@ -9,7 +9,7 @@ export const mappings = {
   nextjs: "nextjs",
   next: "nextjs",
   "vue.js": "vuejs",
-  vuejs: "vuejs",
+  vuejs: "vuejs", 
   vue: "vuejs",
   "express.js": "express",
   expressjs: "express",
