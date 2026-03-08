@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Mona_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "sonner";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -10,7 +11,7 @@ const monaSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-
+j
 
 export const metadata: Metadata = {
   title: "PrepWise",
@@ -28,6 +29,7 @@ export default function RootLayout({
         className={`${monaSans.className} antialiased pattern`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
