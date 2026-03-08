@@ -1,8 +1,38 @@
-import React from 'react'
+import { getRandomInterviewCover } from "@/public/utils";
+import dayjs from "dayjs";
+import Image from "next/image";
 
-const InterviewCard = () => {
+const InterviewCard = ({ interviewId, userId, role, type, techstack, createdAt}: 
+    InterviewCardProps) => {
+        const feedback = null as Feedback | null;
+        const normalizedType = /mix/gi.test(type) ? 'Mixed' : type;
+        const formattedDate = dayjs(feedback?.createdAt || createdAt || Date.now())
+        .format("MMM D, YYYY");
   return (
-    <div>InterviewCard</div>
+    <div className="card-board w-[360px] max-sm:w-full">
+        <div className="card-interview">
+            <div>
+                <div className="absolute top-0 right-0 w-fit px-4 py-1
+                py-2 rounded-bl-lg bg-light-600">
+                    <p className="badge-text">{normalizedType}</p>
+                </div>
+
+                <Image src={getRandomInterviewCover()} alt="cover image" width={90}
+                 height={90} className="rounded-full object-fit size-[90px]" />
+
+                 <h3 className="mt-5 capitalize">
+                    {role} Interview
+                 </h3>
+
+                 <div className="flex flex-row gap-5 mt-3">
+                    <div className="flex flex-row gap-2">
+                        <Image src="/calendar.svg" alt="calendar" width={22} height={22} />
+                        <p>{formattedDate}</p>
+                 </div>
+
+            </div>
+        </div>
+    </div>
   )
 }
 
