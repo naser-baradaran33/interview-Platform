@@ -29,8 +29,17 @@ const InterviewCard = ({ interviewId, userId, role, type, techstack, createdAt}:
                         <Image src="/calendar.svg" alt="calendar" width={22} height={22} />
                         <p>{formattedDate}</p>
                  </div>
+                    
+                    <div className="flex flex-row gap-2">
+                        <Image src="/star.svg" alt="star" width={22} height={22} />
+                        <p>{feedback?.totalScore || '---'}/100</p>
 
+                    </div>
             </div>
+
+            <p className="line-clamp-2 mt-5">
+                {feedback?.finalAssessment || "You haven't taken the interview yet. Take it now to improve your skills."}
+            </p>
         </div>
     </div>
   )
