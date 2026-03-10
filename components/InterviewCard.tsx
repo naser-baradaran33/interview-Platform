@@ -1,8 +1,10 @@
-import { getRandomInterviewCover } from "@/lib/utils";
+import { cn, getRandomInterviewCover } from "@/lib/utils";
 import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
-import DisplayTechIcon from "@/components/DisplayTechIcons";
+import { getFeedbackByInterviewId } from "@/lib/actions/general.action";
+import DisplayTechIcons from "@/components/DisplayTechIcons";
+import { Button } from "./ui/button";
 
 const InterviewCard = async ({
   interviewId,
@@ -91,8 +93,8 @@ const InterviewCard = async ({
             <Link
               href={
                 feedback
-                  ? `/interview/${interviewId}/feedback`
-                  : `/interview/${interviewId}`
+                  ? `/interview/${id}/feedback`
+                  : `/interview/${id}`
               }
             >
               {feedback ? "Check Feedback" : "View Interview"}
