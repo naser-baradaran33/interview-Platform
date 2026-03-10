@@ -11,7 +11,7 @@ const monaSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-j
+
 
 export const metadata: Metadata = {
   title: "PrepWise",
