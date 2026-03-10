@@ -7,7 +7,7 @@ import DisplayTechIcons from "@/components/DisplayTechIcons";
 import { Button } from "./ui/button";
 
 const InterviewCard = async ({
-  interviewId,
+  id,
   userId,
   role,
   type,
@@ -15,7 +15,7 @@ const InterviewCard = async ({
   createdAt,
 }: InterviewCardProps) => {
   const feedback =
-    userId && interviewId
+    userId && id
       ? await getFeedbackByInterviewId({
           id,
           userId,

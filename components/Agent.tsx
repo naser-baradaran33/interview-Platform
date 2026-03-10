@@ -132,7 +132,7 @@ const Agent = ({
           .join("\n");
       }
 
-      await vapi.start(interviewer, {g
+      await vapi.start(interviewer, {
         variableValues: {
           questions: formattedQuestions,
         },
