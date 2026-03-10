@@ -17,7 +17,7 @@ const InterviewCard = async ({
   const feedback =
     userId && id
       ? await getFeedbackByInterviewId({
-          interviewId: id,
+          interviewId,
           userId})
       : null;
 
