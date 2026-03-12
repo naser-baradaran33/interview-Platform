@@ -1,37 +1,37 @@
  AI‑Powered Interview Practice Platform
 PrepWise is a full‑stack web application designed to help users practice job interviews through interactive, AI‑generated sessions. Built with Next.js and TypeScript, the platform delivers a fast, modern, and scalable experience, while Firebase powers authentication and data storage. AI‑driven interview simulations are handled through VAPI, enabling dynamic question generation and real‑time conversational flow.
 
-Key Features
+# Key Features
 User Authentication
 
-Secure sign‑up and login using Firebase Authentication
+# Secure sign‑up and login using Firebase Authentication
 
-AI‑Driven Interview Simulation
+# AI‑Driven Interview Simulation
 
-VAPI‑powered interview questions, follow‑ups, and adaptive conversation logic
+# VAPI‑powered interview questions, follow‑ups, and adaptive conversation logic
 
-Personal Dashboard
+# Personal Dashboard
 
-Track past interview sessions, progress, and saved results
+# Track past interview sessions, progress, and saved results
 
-Responsive UI
+# Responsive UI
 
-Modern, mobile‑friendly interface built with Next.js and TypeScript
+# Modern, mobile‑friendly interface built with Next.js and TypeScript
 
-Real‑Time Data Handling
+# Real‑Time Data Handling
 
-Firestore/Realtime Database for storing user profiles, interview history, and settings
+# Firestore/Realtime Database for storing user profiles, interview history, and settings
 
-Optimized Performance
+# Optimized Performance
 
-Server‑side rendering (SSR) and static optimization for speed and SEO
+# Server‑side rendering (SSR) and static optimization for speed and SEO
 
 Tech Stack
-Next.js (App Router, SSR, SSG)
+# Next.js (App Router, SSR, SSG)
 
-TypeScript
+# TypeScript
 
-Firebase (Authentication, Firestore/Realtime Database)
+# Firebase (Authentication, Firestore/Realtime Database)
 
 VAPI for AI‑powered interview generation
 
