@@ -1,3 +1,4 @@
+ Next.js Full Stack Authentication App
  AI‑Powered Interview Practice Platform
 PrepWise is a full‑stack web application designed to help users practice job interviews through interactive, AI‑generated sessions. Built with Next.js and TypeScript, the platform delivers a fast, modern, and scalable experience, while Firebase powers authentication and data storage. AI‑driven interview simulations are handled through VAPI, enabling dynamic question generation and real‑time conversational flow.
 
