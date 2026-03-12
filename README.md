@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ AI‑Powered Interview Practice Platform
+PrepWise is a full‑stack web application designed to help users practice job interviews through interactive, AI‑generated sessions. Built with Next.js and TypeScript, the platform delivers a fast, modern, and scalable experience, while Firebase powers authentication and data storage. AI‑driven interview simulations are handled through VAPI, enabling dynamic question generation and real‑time conversational flow.
 
-## Getting Started
+Key Features
+User Authentication
 
-First, run the development server:
+Secure sign‑up and login using Firebase Authentication
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+AI‑Driven Interview Simulation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+VAPI‑powered interview questions, follow‑ups, and adaptive conversation logic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Personal Dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Track past interview sessions, progress, and saved results
 
-## Learn More
+Responsive UI
 
-To learn more about Next.js, take a look at the following resources:
+Modern, mobile‑friendly interface built with Next.js and TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Real‑Time Data Handling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Firestore/Realtime Database for storing user profiles, interview history, and settings
 
-## Deploy on Vercel
+Optimized Performance
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Server‑side rendering (SSR) and static optimization for speed and SEO
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tech Stack
+Next.js (App Router, SSR, SSG)
+
+TypeScript
+
+Firebase (Authentication, Firestore/Realtime Database)
+
+VAPI for AI‑powered interview generation
+
+Modern UI styling (Tailwind CSS or similar)
+
+Full‑stack architecture with API routes and client/server separation
+
+Project Purpose
+This project was built as a hands‑on learning experience to deepen full‑stack development skills, master Next.js and TypeScript, and integrate cloud‑based services like Firebase and AI APIs. It can serve as a foundation for a production‑ready interview preparation tool.
