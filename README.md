@@ -33,9 +33,9 @@ Tech Stack
 
 # Firebase (Authentication, Firestore/Realtime Database)
 
-VAPI for AI‑powered interview generation
+# VAPI for AI‑powered interview generation
 
-Modern UI styling (Tailwind CSS or similar)
+# Modern UI styling (Tailwind CSS or similar)
 
 Full‑stack architecture with API routes and client/server separation
 
