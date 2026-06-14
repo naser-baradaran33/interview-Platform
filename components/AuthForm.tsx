@@ -90,9 +90,13 @@ const AuthForm = ({ type }: { type: FormType }) => {
         router.refresh();
         router.push("/");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.log(error);
-      toast.error(`There was an error: ${error}`);
+      const serverMessage =
+        error?.customData?._tokenResponse?.error?.message ||
+        error?.message ||
+        String(error);
+      toast.error(`There was an error: ${serverMessage}`);
     }
   };
 
